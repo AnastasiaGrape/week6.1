@@ -1,0 +1,115 @@
+body {
+            background: url(bgc.png);
+            
+        }
+    @font-face {
+        font-family: Circe;
+        src: url(circe-extralight.ttf);
+    }
+
+    @font-face {
+        font-family: Plumb;
+        src: url(ofont.ru_Plumb.ttf);
+    }
+
+    .header
+                {
+            display: grid;
+            grid-template-columns: 1fr 5fr 2fr;
+            grid-template-areas: "header-logo header-nav header-lang" ". header-text .";grid-template-rows: 1fr 8fr;
+            align-items: center;
+            min-height: 500px;
+            
+        }
+    
+    .nav-text
+                {
+            text-decoration: none;   
+            color: white;  
+            font-family: Circe;
+        }
+
+    .header-text
+                {  
+            grid-area: header-text;
+            display: grid;
+            font-family: Circe;
+            color: white;
+            text-align: start;
+            
+        }
+
+    
+
+    .header-subtitle 
+                {
+                font-family: Circe;  
+                font-size: medium;
+                
+                }
+
+    .button 
+                {
+                    font-family: Circe;
+                    font-size: small;
+                    color: white;
+                    text-decoration: none;
+                }
+
+    .header-nav
+                {
+            grid-area: header-nav;
+            display: grid;
+            text-align: center;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            font-family: Circe;
+            font-size: 16px;
+            color: white;
+            
+
+
+        }
+    
+    
+    .language 
+                {
+            grid-area: header-lang;
+            display: grid;
+            justify-self: end;
+        }
+
+    .cell {
+        color: white;
+        font-weight: 300;
+        font-family: Plumb;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .container 
+            {
+                display: grid;
+                grid-template-columns: 250px 250px;
+                grid-template-rows: 140px 140px;
+                grid-gap: 20px;
+                grid-row: 3/4;
+                grid-column: 3/4;
+                
+                
+            }
+    .footer
+            {
+                display: grid;
+                justify-content: end;
+                background-color: #2378FC;
+                grid-row: 4/4;
+                
+
+
+            
+    }
+
+
+
+
+
